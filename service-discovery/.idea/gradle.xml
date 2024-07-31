@@ -3,20 +3,20 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/client/first" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client/order" />
         <option name="gradleJvm" value="openjdk-21" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/client/first" />
+            <option value="$PROJECT_DIR$/client/order" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/client/second" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client/product" />
         <option name="gradleJvm" value="openjdk-21" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/client/second" />
+            <option value="$PROJECT_DIR$/client/product" />
           </set>
         </option>
       </GradleProjectSettings>
