@@ -15,4 +15,9 @@ public class OrderController {
     public String getOrder(@PathVariable String orderId) {
         return orderService.getOrder(orderId);
     }
+
+    @GetMapping("/order")
+    public String getOderWithoutService() {
+        return "Order detail";
+    }
 }
