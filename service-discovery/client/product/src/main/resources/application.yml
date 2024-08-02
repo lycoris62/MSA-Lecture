@@ -1,9 +1,25 @@
 spring:
   application:
     name: product-service
+  profiles:
+    active: local
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+  config:
+    import: "configserver:"
 server:
-  port: 19093
+  port: 0
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:19090/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+message: "default message"
