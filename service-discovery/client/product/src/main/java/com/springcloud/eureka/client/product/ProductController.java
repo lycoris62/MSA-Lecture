@@ -11,6 +11,9 @@ public class ProductController {
     @Value("${server.port}")
     private String serverPort;
 
+    @Value("${message}")
+    private String message;
+
     @GetMapping("/product/{id}")
     public String getProduct(@PathVariable String id) {
         return "Product " + id + " info!!!!!! From port : " + serverPort;
@@ -18,6 +21,6 @@ public class ProductController {
 
     @GetMapping("/product")
     public String getProductWithoutId() {
-        return "Product info!!!!!! From port : " + serverPort;
+        return "Product detail from PORT : " + serverPort + " and message : " + this.message;
     }
 }
