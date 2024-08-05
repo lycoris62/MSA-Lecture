@@ -1,25 +1,31 @@
 spring:
   application:
     name: product-service
-  profiles:
-    active: local
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server
-  config:
-    import: "configserver:"
+#  profiles:
+#    active: local
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: config-server
+#  config:
+#    import: "configserver:"
 server:
-  port: 0
+  port: 19092
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:19090/eureka/
 management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+  #  endpoints:
+  #    web:
+  #      exposure:
+  #        include: refresh
+  zipkin:
+    tracing:
+      endpoint: "http://yunjae.click:9411/api/v2/spans"
+  tracing:
+    sampling:
+      probability: 1.0
 
 message: "default message"
